@@ -19,12 +19,10 @@ public class Main {
         user.printAccountInfo();
         }
 }
-
-
 /**
  * User.java
  */
-class User {
+/*class User {
 
     // フィールド変数
     private String userName;
@@ -46,8 +44,4 @@ class User {
     // ① 以下のルールに従いアカウント情報（名前、ID、パスワード）を出力するメソッドを作成してください。
     // アクセス修飾子:「protected」
     // メソッド名:「printAccountInfo」
-
-
-}
-
-
+}*/
