@@ -4,24 +4,16 @@ import constants.Constants;
 
 public class Check {
     
-    private String firstName;
-    private  String lastName;
+    private static String firstName="石賀";
+    private static  String lastName="成人";
     
-    public Check(String fn,String ln) {
-        this.firstName=fn;
-        this.lastName=ln;    
+    private static void printName(String fName,String lName) {
+        System.out.println("printNameメソッド→"+fName+lName);        
     }
-    
-    private void printName() {
-        System.out.println("printNameメソッド→"+this.firstName+this.lastName);        
-    }
-    
-    
     
     public static void main(String[] args) {
         
-        Check check=new Check("石賀","成人");
-        check.printName();
+        printName(firstName,lastName);
         
         Pet pet=new Pet(Constants.CHECK_CLASS_JAVA,Constants.CHECK_CLASS_HOGE);
         pet.introduce();
@@ -30,5 +22,4 @@ public class Check {
         robotPet.introduce();
         
     }
-
 }
