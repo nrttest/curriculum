@@ -1,0 +1,55 @@
+@media screen and (max-width: 479px){
+.header{
+width: 200px;
+height: 200px;
+}
+
+.whitebox{
+width: 60px;
+height: 160px;
+margin:20px 70px;
+}
+
+.redbox1{
+margin:10px 10px 5px 10px;
+}
+
+.redbox2{
+margin:5px 10px 5px 10px;
+}
+
+.redbox3{
+margin:5px 10px 10px 10px;
+}
+
+.left{
+width: 200px;
+height: 100px;
+float:none;
+}
+
+.right{
+width:200px;
+height:200px;
+float:none;
+padding-top:20px ;
+}
+
+.orngebox1{
+margin: 0 30px 5px 30px;
+float:none;
+}
+
+.orngebox2{
+    margin: 0 30px 5px 30px;   
+    float:none;  
+}
+.orngebox2{
+    margin: 0 30px 5px 30px; 
+    float:none;
+}
+
+.footer{
+    width:200px;
+}
+}
