@@ -12,9 +12,16 @@
 	<%@ include file="header.jsp"%>
 </div>
 <div>
-<p>name <input type="text" name="name" size="15"></p>
-<p>  id <input type="text" name="id" size="15"></p>
-
+<table>
+	<tr>
+		<th>name</th>
+		<td><input type="text" name="name" size="15"></td>
+	</tr>
+	<tr>
+		<th>id</th> 
+		<td><input type="text" name="id" size="15"></td>
+	</tr>
+</table>
 </div>
 <div>
 	<%@ include file="footer.jsp"%>
