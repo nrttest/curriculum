@@ -5,16 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<style> h1 { color: white; } </style>
-<style> h1 { background-color: gray; } </style>
+<style> p{ color: white; } </style>
+<style> p{ background-color: gray; } </style>
 </head>
 <body>
 <div>
-	<h1>login   <% Date date = new Date();
+	<p>login   <% Date date = new Date();
       SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
       String formatDate = sdf.format(date);
 		out.print(formatDate); %>
-	</h1>
+	</p>
 	
 	
 </div>
