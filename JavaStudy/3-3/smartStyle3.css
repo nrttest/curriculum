@@ -41,15 +41,17 @@ float:none;
 }
 
 .orngebox2{
-    margin: 0 30px 5px 30px;   
+margin: 0 30px 5px 30px;   
     float:none;  
 }
-.orngebox2{
-    margin: 0 30px 5px 30px; 
+
+.orngebox3{
+margin: 0 30px 5px 30px; 
     float:none;
 }
 
 .footer{
     width:200px;
 }
+
 }
