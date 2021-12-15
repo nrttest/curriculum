@@ -5,13 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<style> h1 { color: white; } </style>
-<style> h1 { background-color: gray; } </style>
+<style> p { color: white; } </style>
+<style> p { background-color: gray; } </style>
 
 </head>
 <body>
 <div>
-	<h1>hoge.Inc</h1>
+	<p>hoge.Inc</p>
 </div>
 </body>
 </html>
