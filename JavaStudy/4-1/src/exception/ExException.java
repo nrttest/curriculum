@@ -71,7 +71,7 @@
                         // ここへ記述
                        
                         if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<boxNumber) {
-                       throw new ArrayIndexOutOfBoundsException("index "+CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS+" out of bounds for length"+boxNumber);
+                       extracted(boxNumber);
                         }
                         break;
                         case CONST_EXCEPTION_TRIGER_CAST:
@@ -85,6 +85,7 @@
 
                 } catch (NullPointerException e) {
                     printException(e);
+                    System.out.println(CONST_MSG_NULLPO);
                 } catch (ArrayIndexOutOfBoundsException e) {
                     printException(e);
                     // 問③: クラスキャストの例外をキャッチしなさい。
@@ -101,6 +102,10 @@
             System.out.println("お疲れ様でした！");
         }
 
+        private static void extracted(int boxNumber) {
+            throw new ArrayIndexOutOfBoundsException("index "+CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS+" out of bounds for length"+boxNumber);
+        }
+
         /**
          * 問①: 以下のルールに沿ってNullPointerExceptionを投げるメソッドを実装しなさい。
          * ルール1: private static void 任意のメソッド名 throws 上位へ投げるExceptionクラス名 { NullPointerExceptionを発生させる処理 }
@@ -110,7 +115,7 @@
     
         private static void nullExpetion() throws NullPointerException{
         
-         System.out.println(CONST_MSG_NULLPO);
+         throw new NullPointerException();
         }
          /**
          * 例外処理のメッセージを出力
