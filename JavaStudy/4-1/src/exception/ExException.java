@@ -69,10 +69,10 @@
                         // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
                         // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
                         // ここへ記述
-                       
-                        if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<boxNumber) {
+                       for(int i=0;i<=box.length;i++) {
+                       }
+                           if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<boxNumber) 
                        extracted(boxNumber);
-                        }
                         break;
                         case CONST_EXCEPTION_TRIGER_CAST:
                         String castedStrValue = (String) CONST_OBJ_FOR_CLASS_CAST;
