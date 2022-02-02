@@ -35,7 +35,7 @@
             int parameter;
             int retryCounter = 0;
             int box[]= {1,2,3,4};
-            int boxNumber=box.length;
+           
             Scanner sc;
 
             do {
@@ -70,9 +70,10 @@
                         // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
                         // ここへ記述
                        for(int i=0;i<=box.length;i++) {
+                           if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<i) 
+                               extracted(box.length);
                        }
-                           if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<boxNumber) 
-                       extracted(boxNumber);
+                           
                         break;
                         case CONST_EXCEPTION_TRIGER_CAST:
                         String castedStrValue = (String) CONST_OBJ_FOR_CLASS_CAST;
