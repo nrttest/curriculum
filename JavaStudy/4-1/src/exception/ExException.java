@@ -70,8 +70,9 @@
                         // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
                         // ここへ記述
                        for(int i=0;i<=box.length;i++) {
-                           if(CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS<i) 
-                               extracted(box.length);
+                           if(i==box.length) {
+                             System.out.println(box[i]);
+                           }
                        }
                            
                         break;
@@ -89,6 +90,7 @@
                     System.out.println(CONST_MSG_NULLPO);
                 } catch (ArrayIndexOutOfBoundsException e) {
                     printException(e);
+                    System.out.println("index "+CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS+" out of bounds for length"+box.length);
                     // 問③: クラスキャストの例外をキャッチしなさい。
                     // ルール: 上述の他の例外同様引、数名は「e」で記述すること。
                 } catch(ClassCastException e)/* ここへ記述 */ {
@@ -103,9 +105,9 @@
             System.out.println("お疲れ様でした！");
         }
 
-        private static void extracted(int boxNumber) {
-            throw new ArrayIndexOutOfBoundsException("index "+CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS+" out of bounds for length"+boxNumber);
-        }
+       // private static void extracted(int boxNumber) {
+         //   throw new ArrayIndexOutOfBoundsException("index "+CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS+" out of bounds for length"+boxNumber);
+       // }
 
         /**
          * 問①: 以下のルールに沿ってNullPointerExceptionを投げるメソッドを実装しなさい。
@@ -122,12 +124,7 @@
          * 例外処理のメッセージを出力
          *
          * @param e 発生した例外
-         */
-        
-//        private static void numberOutExpetion() throws ArrayIndexOutOfBoundsException{
-//         
-//        }
-        
+         */        
         
         private static void printException(final Exception e) {
             System.out.println(e);
